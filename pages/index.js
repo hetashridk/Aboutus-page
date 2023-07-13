@@ -9,7 +9,7 @@ function Index() {
     <>
       <Header />
       <Aboutus />
-      <Success />
+      {/* <Success /> */}
     </>
   
   );
