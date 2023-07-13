@@ -10,8 +10,8 @@ function Header() {
   const [showMenu, setShowMenu] = useState(false);
   return (
     <>
-      <Image src={header} className="absolute top-0 left-0" />
-      <nav className="flex absolute top-6 left-12 right-0 bottom-0 z-10">
+      
+      <nav className="fixed flex z-10">
         <div>
           {/* <Link to="/"> */}
           <Image src={FG_LOGO_white_4} width={55} />
@@ -46,15 +46,26 @@ function Header() {
           {/* <button className="text-white space-x-4">Products</button> */}
         </div>
       </nav>
-      <div className="relative top-32 p-32">
-        <p className="text-white text-2xl text-center font-semibold">
+
+      <div className="w-full overflow-x-clip">
+      <div className="flex flex-col bg-cover h-[800px]">
+      <Image src={header} className="" />
+
+      <div className="absolute flex flex-wrap items-center justify-center m-16 lg:p-12 lg:mt-[13.75rem] md:p-18">
+        <p className="text-white text-[0.8rem] text-center sm:font-semibold sm:text-2xl">
           Our aim is to help accelerate client growth, strengthen their market
           base and amplify the volume of transactions through our
           quality-focused products.
         </p>
-        <button className="relative left-[30rem] text-2xl font-semibold text-white m-5 border-none rounded-xl bg-blue-700 px-10 py-3">
+        <div className="flex items-center justify-center">
+
+        <button className="mt-2 text-[10px] sm:text-2xl font-semibold px-1 py-1 text-white sm:m-5 border-none rounded-xl bg-blue-700 sm:px-10 sm:py-3">
           Contact us
         </button>
+        </div>
+      </div>
+      </div>
+
       </div>
     </>
   );
