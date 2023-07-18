@@ -4,6 +4,10 @@ import twitter_m from "../../public/images/twitter_m.png";
 import insta_mv from "../../public/images/insta_mv.png";
 import fb_mv from "../../public/images/fb_mv.png";
 import ld_mv from "../../public/images/ld_mv.png";
+import twitter_logo from "../../public/images/twitter_logo.png";
+import insta_logo from "../../public/images/insta_logo.png";
+import fb_logo from "../../public/images/fb_logo.png";
+import ld_logo from "../../public/images/ld_logo.png";
 import location from "../../public/images/location.png";
 import call from "../../public/images/call.png";
 import msg from "../../public/images/msg.png";
@@ -23,7 +27,7 @@ function Contact() {
               </p>
             </div>
             <div>
-              <p className="text-white text-left pl-5 px-4 pt-2 text-[10px] md:">
+              <p className="text-white text-left pl-5 px-4 pt-2 text-[10px] md:text-[15px] md:">
                 At Fintract Global Ltd, we combine a cutting-edge tech stack
                 with exceptional talent from Europe, Asia and America to lead
                 change in how financial entities work. Headquartered in London,
@@ -31,18 +35,22 @@ function Contact() {
                 products.
               </p>
             </div>
-            <div className="flex m-5 md:">
+            <div className="flex m-5">
               <div className="p-2">
-                <Image src={twitter_m} />
+                <Image src={twitter_m} className="sm:hidden" />
+                <Image src={twitter_logo} className="hidden md:block" />
               </div>
               <div className="p-2">
-                <Image src={insta_mv} />
+                <Image src={insta_mv} className="sm:hidden" />
+                <Image src={insta_logo} className="hidden md:block" />
               </div>
               <div className="p-2">
-                <Image src={fb_mv} />
+                <Image src={fb_mv} className="sm:hidden" />
+                <Image src={fb_logo} className="hidden md:block" />
               </div>
               <div className="p-2">
-                <Image src={ld_mv} />
+                <Image src={ld_mv} className="sm:hidden" />
+                <Image src={ld_logo} className="hidden md:block" />
               </div>
             </div>
           </div>
@@ -82,7 +90,7 @@ function Contact() {
         <hr />
 
         <div>
-          <p className="text-[#9b9b9b] text-[10px] p-5">
+          <p className="text-[#9b9b9b] text-[10px] p-5 md:text-white md:text-[15px]">
             Fintract Global takes your privacy very seriously. We may process
             your personal information for carefully considered and specific
             purposes which are in our interests and enable us to enhance the
@@ -95,7 +103,7 @@ function Contact() {
           <p className=" text-white text-xl text-center">Click Here</p>
         </div>
         <div>
-          <p className="text-[#9b9b9b] text-[10px] text-center p-5">
+          <p className="text-[#9b9b9b] text-[10px] text-center p-5 md:text-white md:text-[15px]">
             Copyright ©2021 All rights reserved
           </p>
         </div>
